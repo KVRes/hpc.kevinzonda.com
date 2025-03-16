@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kappa HPC</title>
+    <style>
+        /* Modern color scheme and styling */
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #001f3f;
+            --accent-color: #00b8d4;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .tagline {
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .spec-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .spec-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .spec-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 0.5rem 0;
+        }
+        
+        .spec-label {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        
+        .partners {
+            margin-top: 3rem;
+        }
+        
+        .partners h2 {
+            text-align: center;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .partners h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 0.5rem auto 0;
+        }
+        
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .partner-logo {
+            max-width: 200px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 0.75rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kappa HPC</h1>
+        <p class="tagline">A Tier 3 Accelerated Compute System</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <p>Kappa is a virtual HPC cluster which is distributed high-performance computing infrastructure with resources positioned across the world, providing computational power for research and enterprise.</p>
+            
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <div class="spec-value">3</div>
+                    <div class="spec-label">Compute Nodes</div>
+                </div>
+                
+                <div class="spec-card">
+                    <div class="spec-value">50+ TiB</div>
+                    <div class="spec-label">Storage Capacity</div>
+                </div>
+                
+                <div class="spec-card">
+                    <div class="spec-value">8</div>
+                    <div class="spec-label">GPU Accelerators</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="partners">
+            <h2>Our Partners</h2>
+            <div class="partner-logos">
+                <img src="assets/kigland.png" alt="Kigland" class="partner-logo">
+                <img src="assets/kvres.png" alt="KevinZonda Research" class="partner-logo">
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Kappa Tier 3 is founded by several computation providers, delivering HPC for researchers<br>
+                &copy; 2025 Kappa HPC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
