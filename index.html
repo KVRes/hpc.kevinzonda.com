@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kappa HPC</title>
+    <title>Kepler Tier 3 HPC</title>
     <style>
         /* Modern color scheme and styling */
         :root {
@@ -109,6 +109,10 @@
             flex-wrap: wrap;
             gap: 2rem;
         }
+
+        .nv-logo {
+            max-height: 80px;
+        }
         
         .partner-logo {
             max-width: 200px;
@@ -148,28 +152,33 @@
 </head>
 <body>
     <header>
-        <h1>Kappa HPC</h1>
+        <h1>Kepler HPC</h1>
         <p class="tagline">A Tier 3 Accelerated Compute System</p>
     </header>
     
     <div class="container">
         <section>
-            <p>Kappa is a virtual HPC cluster which is distributed high-performance computing infrastructure with resources positioned across the world, providing computational power for research and enterprise.</p>
+            <p>Kepler is a distributed HPC (high-performance computing) infrastructure with resources positioned across the world, providing computational power for research and enterprise.</p>
             
             <div class="specs-grid">
                 <div class="spec-card">
-                    <div class="spec-value">3</div>
+                    <div class="spec-value">5</div>
                     <div class="spec-label">Compute Nodes</div>
                 </div>
                 
                 <div class="spec-card">
                     <div class="spec-value">50+ TiB</div>
-                    <div class="spec-label">Storage Capacity</div>
+                    <div class="spec-label">Storage</div>
                 </div>
                 
                 <div class="spec-card">
                     <div class="spec-value">8</div>
-                    <div class="spec-label">GPU Accelerators</div>
+                    <div class="spec-label">GPUs</div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-value">4</div>
+                    <div class="spec-label">Regions</div>
                 </div>
             </div>
         </section>
@@ -181,13 +190,24 @@
                 <img src="assets/kvres.png" alt="KevinZonda Research" class="partner-logo">
             </div>
         </section>
+
+        <section class="partners">
+            <h2>Works With</h2>
+            <div class="partner-logos">
+                <img src="assets/nv.svg" alt="NVIDIA" class="partner-logo nv-logo">
+                <img src="assets/dell.svg" alt="DELL" class="partner-logo nv-logo">
+                <img src="assets/ic.svg" alt="Imperial College London" class="partner-logo">
+                <img src="assets/ucl.svg" alt="University College London" class="partner-logo">
+                <img src="assets/uob.png" alt="University of Birmingham" class="partner-logo">
+            </div>
+        </section>
     </div>
     
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <p>Kappa Tier 3 is founded by several computation providers, delivering HPC for researchers<br>
-                &copy; 2025 Kappa HPC. All rights reserved.</p>
+                <p>Kepler Tier 3 HPC is founded by several computation providers, delivering HPC for researchers<br>
+                &copy; 2025 Kepler HPC. All rights reserved.</p>
             </div>
         </div>
     </footer>
